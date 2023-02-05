@@ -1,20 +1,30 @@
 # Phase 1 Project
+## Project title
+Box Office Success: Understanding Film Trends for Microsoft's New Movie Studio
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+## Background
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
-
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+Microsoft is a multinational technology company based in Redmond, Washington. It was founded on April 4, 1975, by Bill Gates and Paul Allen. Microsoft is best known for its Windows operating system and the Microsoft Office suite of productivity software. 
+However, they want to venture into creating original video content by creating a new studio.
 
 ## Project Overview
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+For this project, I will use exploratory data analysis to generate insights for a business stakeholder.
 
-### Business Problem
+## Business problem
+Microsoft aims to enter the movie production industry but lacks the knowledge of what types of films are performing well at the box office. The challenge is to explore and analyse the current film market to provide actionable insights that can inform and guide Microsoft in making strategic decisions for their new movie studio.
+## Main objective
+* To determine the most profitable film genres in the current market in order to inform the company's decision-making process for creating a new movie studio.
+## Specific objectives
+* Identify the most frequent genres in the dataset
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+* Investigate the most rated and voted genre
 
-### The Data
+* Identify general trends of revenue generation over years
+
+* Discover top competitors in the market
+
+## Data
 
 In the folder `zippedData` are movie datasets from:
 
@@ -24,42 +34,109 @@ In the folder `zippedData` are movie datasets from:
 * [TheMovieDB](https://www.themoviedb.org/)
 * [The Numbers](https://www.the-numbers.com/)
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+Used datasets are;
 
 * imdb.title.basics
 * imdb.title.ratings
 * bom.movie_gross
 
-## Deliverables
+### Libraries 
+* Python- Programming language
 
-There are three deliverables for this project:
+* Pandas- Exploratory data analysis
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+* Seaborn- Visualization
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+* NumPy - Numerical computing and data analysis
 
-### Key Points
+* Matplotlib- Visualization
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+## Exploratory Data Analysis
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+Frequency for each genre
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+![image](https://user-images.githubusercontent.com/122217304/216826269-5e82ed19-c829-4b11-a46d-d094617def3f.png)
 
-## Getting Started
+Most rated genres.
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+![image](https://user-images.githubusercontent.com/122217304/216826410-6d52b15a-7b5b-4493-89d3-6fcd0f78277a.png)
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
 
-## Project Submission and Review
+Most voted genres.
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+![image](https://user-images.githubusercontent.com/122217304/216826501-f14cb111-5cdc-4a81-b3c1-74e1c7f3101c.png)
+ 
+Action, Comedy and drama are the leading most voted genres.
 
-## Summary
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+
+
+20 Most voted movies
+
+![image](https://user-images.githubusercontent.com/122217304/216826570-0718c264-9ab6-4d3d-8003-23dec7c8854d.png)
+
+
+
+20 most rated movies
+
+![image](https://user-images.githubusercontent.com/122217304/216826606-7d856525-0173-4909-a14b-82db8ccde9b0.png)
+
+
+
+![image](https://user-images.githubusercontent.com/122217304/216826673-b574fc25-db47-41eb-98ab-9064cdb7b125.png)
+
+Majority generates more revenue on international level compared to domestically.
+Action is still the leading genre.
+
+
+![image](https://user-images.githubusercontent.com/122217304/216826708-9c4bfd75-2e74-4b62-8902-f1a4ac325ae1.png)
+
+Combined domestic and international revenue for each studio
+
+
+
+![image](https://user-images.githubusercontent.com/122217304/216826746-10058bc7-d910-4e3e-a16d-7df995e09fd9.png)
+
+These are the top 20 studios that will be in competition with microsoft in their new business.
+
+
+
+![image](https://user-images.githubusercontent.com/122217304/216826817-9ce97bcf-29d6-4331-9f1d-ccff55bd368c.png)
+
+Revenue collected in 2010-2019
+
+
+
+
+## Conclusion
+
+* Action comedy and biography are the most performing genres. 
+
+* Higher revenue is generated internationally for most studios. Due to larger global market, stronger distribution network, currency fluctuations and cultural appeal.
+
+* The downward trend in revenue collection could be due to competition from other forms of entertainment, economic factors, changes in technology, changes n audience preference and quality of films.
+
+* Inception, the dark knight rises and Interstellar are the most voted and rated movies.
+
+## Recommendation
+
+* To address the cold start problem for new users, the system can request that first-time users input a list of their preferred movie genres upfront.
+
+* Microsoft should choose certain performing genres since they influence the choice of customers. 
+
+* Avail streaming, DVD rental and online downloads options where people can get access even with their phones to curb the issue of change in technology.
+
+* Proper advertisement for new and poor performing movies to increase revenue collection.
+
+* They should also know their main competitors and maximize on brand recognition because studios with strong brand reputation are more likely to receive higher ratings.
+
+### What Next?
+
+* Developing a detailed production plan based on the recommended film genres, budget, and target audience.
+
+* Implementing new technologies and creative approaches to increase the efficiency and quality of the production process.
+
+* Launching an extensive marketing campaign to raise awareness and generate interest in the studio's upcoming productions.
+
+* Collaborating with film distributors and theaters to ensure a successful theatrical release and maximize revenue.
